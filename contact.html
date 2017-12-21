@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Lobster|Love+Ya+Like+A+Sister|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="site.css">
+
+    </head>
+
+    <body>
+        <style>
+            body{
+                font-family: 'Love Ya Like A Sister', cursive;
+            }
+            h1{
+                font-family: 'Love Ya Like A Sister', cursive;
+                border: 1px white;
+                background-color: white;
+                padding-top: 10px;
+                padding-right: 35px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                font-size: 60px;
+                color: #ff9dab;
+            }
+            ul {
+                
+                margin:0 auto;
+                list-style-type: none;
+                padding-top: 10px;
+                padding-bottom:10px;
+                font-size: 18px;
+                overflow: hidden;
+                background-color: #000000;
+            }
+            li {
+                float: left;
+
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                width:150px;
+                
+                text-decoration: none;
+            }
+            
+            li a:hover{
+                background-color:#555;
+                color:white;
+            }
+
+            li a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+
+            .jumbotron {
+                background: #FFFFFF;
+                color: #ff9dab;
+                border-radius: 0px;
+            }
+            .jumbotron-sm { padding-top: 24px;
+                            padding-bottom: 24px; }
+            .jumbotron small {
+                color: #ff9dab;
+            }
+            .h1 small {
+                font-size: 24px;
+            }</style>
+
+
+        <h1 class="centered baloocursive">pattycake❤</h1>
+        <div>
+            <ul class="centered baloocursive">
+                <li><center><a href="http://csc412sfsu.com/~dsun/">Home</a></center></li>
+                <li><center><a href="http://csc412sfsu.com/~dsun/current">Recipes</a></li> 
+                    <li><center><a href="http://csc412sfsu.com/~dsun/about.html">About</a></center></li>
+                    <li><center><a href="http://csc412sfsu.com/~dsun/hey">Tips</a></center></li>
+                    <li><center><a href="http://csc412sfsu.com/~dsun/contact">Contact Us</a></center></li>
+
+            </ul>
+            <div class ="relative"> 
+                <img src="cover.jpg" alt="c" style="width:100%;">
+            </div>
+            <div class="jumbotron jumbotron-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-12">
+                            <h1 class="h1">
+                                Contact us <small>Feel free to contact us!</small></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="well well-sm">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">
+                                                Email Address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="subject">
+                                                Subject</label>
+                                            <select id="subject" name="subject" class="form-control" required="required">
+                                                <option value="na" selected="">Choose One:</option>
+                                                <option value="service">Recipe Submission</option>
+                                                <option value="suggestions">Suggestions</option>
+                                                <option value="product">Questions?</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Message</label>
+                                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                                      placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                            Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <form>
+                            <span class="glyphicon glyphicon-globe"></span> Our office
+                            <address>
+                                <strong>Patty Cake, Inc.</strong><br>
+                                123 Baker Street, Suite 600<br>
+                                San Francisco, CA 94107<br>
+                                <abbr title="Phone">
+                                    P:</abbr>
+                                (123) 456-7890
+                            </address>
+                            <address>
+                                <strong>Full Name</strong><br>
+                                <a href="mailto:#">first.last@example.com</a>
+                            </address>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
